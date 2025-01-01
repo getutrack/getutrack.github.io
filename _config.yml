@@ -1,0 +1,49 @@
+title: Flyte
+description: Flyte enables production-grade orchestration for machine learning workflows and data processing created to accelerate local workflows to production.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.flyte.org" # the base hostname & protocol for your site, e.g. http://example.com
+
+plugins:
+  - jekyll-seo-tag
+
+#Links within the site
+documentation: "https://docs.flyte.org/"
+getstarted: "https://docs.flyte.org/en/latest/getting_started/index.html"
+contribute: "https://docs.flyte.org/en/latest/community/contribute.html"
+learnmore: "https://docs.flyte.org/en/latest/index.html"
+email_list: "https://groups.google.com/u/0/a/flyte.org/g/users"
+blog: "https://blog.flyte.org/"
+github: "https://github.com/getutrack/flyte"
+twitter: "https://twitter.com/getutrack"
+stackoverflow: "https://stackoverflow.com/questions/tagged/flyte"
+slack: "https://slack.flyte.org"
+discussions: "https://github.com/getutrack/flyte/discussions"
+youtube: "https://www.youtube.com/channel/UCNduEoLOToNo3nFVly-vUTQ/playlists"
+community_syncup: "https://www.addevent.com/calendar/kE355955"
+community_channels: "https://docs.flyte.org/en/latest/community/index.html"
+office_hour_morning: "https://www.addevent.com/event/zF10349020/"
+office_hour_midday: "https://app.addevent.com/event/fW13717944/"
+office_hour_evening: "https://www.addevent.com/event/dQ10349168/"
+newsletter: "https://www.getrevue.co/profile/flyte"
+concepts: "https://docs.flyte.org/en/latest/concepts/basics.html"
+userguide: "https://docs.flyte.org/projects/cookbook/en/latest/index.html"
+tutorials: "https://docs.flyte.org/projects/cookbook/en/latest/tutorials.html"
+integrations: "https://docs.flyte.org/projects/cookbook/en/latest/integrations.html"
+apidocs: "https://docs.flyte.org/en/latest/reference/index.html"
+deployment_guide: "https://docs.flyte.org/en/latest/deployment/index.html"
+roadmap: "https://github.com/orgs/getutrack/projects/3"
+status: "https://status.flyte.org/"
+deployments: "https://github.com/getutrack/flyte#%EF%B8%8F-current-deployments--contributors"
+discuss: "https://discuss.flyte.org/"
+unionml: "https://github.com/unionai-oss/unionml"
+latchsdk: "https://latchbio.substack.com/p/the-latch-sdk?s=r"
+flytectl_gh_action: "https://github.com/unionai-oss/flytectl-setup-action"
+vscode_extension: "https://github.com/Striveworks/Flyte-Wingman"
+js_sdk: "https://github.com/NotMatthewGriffin/pterodactyl"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - node_modules

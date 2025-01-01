@@ -1,0 +1,538 @@
+<div class="header-banner text-xs md:text-base font-medium">
+  <div id="banner-carousel" class="owl-carousel owl-theme carousel-items">
+    <a
+      href="https://www.meetup.com/union-ai/events/289700411/"
+      class="hidden nav-item top-carousel-item"
+      >Join us for the webinar on "Operationalizing Machine Learning: An
+      Interview Study" paper, Dec. 6th at 1 PM PT!
+      <span class="opacity-70">→</span></a
+    >
+    <a
+      href="https://twitter.com/i/spaces/1ZkKzbXLekWKv?s=20"
+      target="_blank"
+      class="hidden nav-item top-carousel-item"
+      >Tune into our "ML in Production" discussion — w/ Kelsey Hightower!
+      <span class="opacity-70">→</span></a
+    >
+    <a
+      href="https://www.youtube.com/watch?v=AJnNXrdaQHE"
+      target="_blank"
+      class="hidden nav-item top-carousel-item"
+      >Flyte for Biotech! Curious enough? <span class="opacity-70">→</span></a
+    >
+    <a
+      href="https://github.com/getutrack/flyte/releases/tag/v{{site.data.latest_release.release}}"
+      target="_blank"
+      class="hidden nav-item top-carousel-item"
+    >
+      Flyte {{ site.data.latest_release.release}} is out!
+      <span class="opacity-70">→</span>
+    </a>
+    <a
+      href="https://www.addevent.com/calendar/kE355955"
+      target="_blank"
+      class="hidden nav-item top-carousel-item"
+      >Join our bi-weekly community sync <span class="opacity-70">→</span></a
+    >
+  </div>
+</div>
+
+<!--Navbar on the right (uses alpine.js)-->
+<div
+  x-data="{ open: false }"
+  class="flex flex-col max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8"
+>
+  <div class="p-4 flex flex-row items-center justify-between">
+    <ul class="flex flex-row lg:flex-row list-none lg:ml-auto">
+      <li class="nav-item">
+        <a
+          class="py-2 flex text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white hover:opacity-75"
+          href="{{ site.url }}"
+        >
+          <svg
+            id="flyte-svg-main"
+            width="160"
+            height="48"
+            viewBox="0 0 177 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Flyte</title>
+            <path
+              d="M78.984 26.2974V38.8326H72.8132V5.40024H94.9537V11.2768H78.9801V20.4247H91.5582V26.3013H78.984V26.2974Z"
+              fill="white"
+            />
+            <path
+              d="M99.4965 38.8326V5.40024H105.38V38.8326H99.4965Z"
+              fill="white"
+            />
+            <path
+              d="M133.711 14.4745L123.238 40.3114C121.18 45.3751 117.928 47.9998 113.051 47.9998C111.474 47.9998 110.136 47.7598 108.415 47.1404V42.0303C109.753 42.6032 111.427 42.9865 112.575 42.9865C114.772 42.9865 116.687 41.5541 117.451 39.452L117.784 38.5461L108.078 14.4745H114.389L120.846 31.1442L127.35 14.4745H133.711Z"
+              fill="white"
+            />
+            <path
+              d="M145.832 39.2623C140.475 39.2623 136.409 35.7743 136.409 29.0886V7.07263H142.293V14.4745H151.619V19.9679H142.293V29.4254C142.293 32.7702 144.491 34.2026 147.169 34.2026C148.797 34.2026 150.611 33.6296 152.142 32.6269V37.8338C149.944 38.7862 147.793 39.2623 145.832 39.2623Z"
+              fill="white"
+            />
+            <path
+              d="M176.856 28.8524H160.17C160.36 32.054 163.612 34.2026 167.581 34.2026C170.639 34.2026 173.608 32.9599 176.186 31.241V36.4944C173.461 38.4532 170.019 39.2623 166.86 39.2623C159.255 39.2623 154.282 34.1987 154.282 26.5568C154.282 19.0117 159.208 13.9945 166.143 13.9945C172.837 13.9945 176.853 18.5781 176.853 25.9838V28.8524H176.856ZM160.216 24.4585H171.12C171.12 21.2105 169.061 19.2517 166.096 19.2517C163.181 19.2517 160.503 21.0673 160.216 24.4585Z"
+              fill="white"
+            />
+            <path
+              d="M12.8998 24.7411C12.8998 24.7411 0 13.5841 0 2.43095C0 2.43095 1.89543 0.514667 9.46552 0.050113L9.38025 2.43095C9.37637 13.5841 12.8998 24.7411 12.8998 24.7411ZM25.7957 2.43095C25.7957 2.43095 23.8964 0.510795 16.3302 0.050113L16.4154 2.43095C16.4154 13.588 12.892 24.745 12.892 24.745C12.892 24.745 25.7957 13.5841 25.7957 2.43095ZM21.1404 38.9449L19.0318 40.0598C23.218 46.3777 25.8267 47.0552 25.8267 47.0552C35.5015 41.4767 38.7265 24.7411 38.7265 24.7411C38.7265 24.7411 30.8153 33.3663 21.1404 38.9449ZM12.9308 24.7411C12.9308 24.7411 12.8688 24.9734 12.8688 25.4728C12.8688 26.6574 13.2215 29.3557 15.6014 34.1174L17.6209 32.8515C27.2957 27.273 38.7303 24.7411 38.7303 24.7411C38.7303 24.7411 31.5634 22.2635 23.9196 22.2635C20.0978 22.2635 16.1557 22.8829 12.9308 24.7411ZM46.8741 10.5877L48.8936 11.8536C51.2735 7.09197 51.6262 4.39369 51.6262 3.20908C51.6262 2.70968 51.5642 2.47741 51.5642 2.47741C48.3393 0.619191 44.3972 -0.000213623 40.5754 -0.000213623C32.9316 -0.000213623 25.7647 2.47741 25.7647 2.47741C25.7647 2.47741 37.1993 5.00922 46.8741 10.5877ZM38.6644 24.7915C38.9009 24.7295 41.4746 23.812 45.4593 17.7961L43.3507 16.6811C33.6797 11.1026 25.7647 2.47741 25.7647 2.47741C25.7647 2.47741 28.9896 19.2129 38.6644 24.7915Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            id="flyte-svg-mobile"
+            width="140"
+            height="48"
+            viewBox="0 0 177 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Flyte</title>
+            <path
+              d="M78.984 26.2974V38.8326H72.8132V5.40024H94.9537V11.2768H78.9801V20.4247H91.5582V26.3013H78.984V26.2974Z"
+              fill="white"
+            />
+            <path
+              d="M99.4965 38.8326V5.40024H105.38V38.8326H99.4965Z"
+              fill="white"
+            />
+            <path
+              d="M133.711 14.4745L123.238 40.3114C121.18 45.3751 117.928 47.9998 113.051 47.9998C111.474 47.9998 110.136 47.7598 108.415 47.1404V42.0303C109.753 42.6032 111.427 42.9865 112.575 42.9865C114.772 42.9865 116.687 41.5541 117.451 39.452L117.784 38.5461L108.078 14.4745H114.389L120.846 31.1442L127.35 14.4745H133.711Z"
+              fill="white"
+            />
+            <path
+              d="M145.832 39.2623C140.475 39.2623 136.409 35.7743 136.409 29.0886V7.07263H142.293V14.4745H151.619V19.9679H142.293V29.4254C142.293 32.7702 144.491 34.2026 147.169 34.2026C148.797 34.2026 150.611 33.6296 152.142 32.6269V37.8338C149.944 38.7862 147.793 39.2623 145.832 39.2623Z"
+              fill="white"
+            />
+            <path
+              d="M176.856 28.8524H160.17C160.36 32.054 163.612 34.2026 167.581 34.2026C170.639 34.2026 173.608 32.9599 176.186 31.241V36.4944C173.461 38.4532 170.019 39.2623 166.86 39.2623C159.255 39.2623 154.282 34.1987 154.282 26.5568C154.282 19.0117 159.208 13.9945 166.143 13.9945C172.837 13.9945 176.853 18.5781 176.853 25.9838V28.8524H176.856ZM160.216 24.4585H171.12C171.12 21.2105 169.061 19.2517 166.096 19.2517C163.181 19.2517 160.503 21.0673 160.216 24.4585Z"
+              fill="white"
+            />
+            <path
+              d="M12.8998 24.7411C12.8998 24.7411 0 13.5841 0 2.43095C0 2.43095 1.89543 0.514667 9.46552 0.050113L9.38025 2.43095C9.37637 13.5841 12.8998 24.7411 12.8998 24.7411ZM25.7957 2.43095C25.7957 2.43095 23.8964 0.510795 16.3302 0.050113L16.4154 2.43095C16.4154 13.588 12.892 24.745 12.892 24.745C12.892 24.745 25.7957 13.5841 25.7957 2.43095ZM21.1404 38.9449L19.0318 40.0598C23.218 46.3777 25.8267 47.0552 25.8267 47.0552C35.5015 41.4767 38.7265 24.7411 38.7265 24.7411C38.7265 24.7411 30.8153 33.3663 21.1404 38.9449ZM12.9308 24.7411C12.9308 24.7411 12.8688 24.9734 12.8688 25.4728C12.8688 26.6574 13.2215 29.3557 15.6014 34.1174L17.6209 32.8515C27.2957 27.273 38.7303 24.7411 38.7303 24.7411C38.7303 24.7411 31.5634 22.2635 23.9196 22.2635C20.0978 22.2635 16.1557 22.8829 12.9308 24.7411ZM46.8741 10.5877L48.8936 11.8536C51.2735 7.09197 51.6262 4.39369 51.6262 3.20908C51.6262 2.70968 51.5642 2.47741 51.5642 2.47741C48.3393 0.619191 44.3972 -0.000213623 40.5754 -0.000213623C32.9316 -0.000213623 25.7647 2.47741 25.7647 2.47741C25.7647 2.47741 37.1993 5.00922 46.8741 10.5877ZM38.6644 24.7915C38.9009 24.7295 41.4746 23.812 45.4593 17.7961L43.3507 16.6811C33.6797 11.1026 25.7647 2.47741 25.7647 2.47741C25.7647 2.47741 28.9896 19.2129 38.6644 24.7915Z"
+              fill="white"
+            />
+          </svg>
+          <img src="{{ "/assets/images/flyte_lockup_on_light.svg" | prepend:
+          site.url }}" id="flyte-logo-on-light-bg" width="140">
+        </a>
+      </li>
+      <li class="nav-item flex">
+        <a
+          class="flex leading-relaxed inline-block mr-4 hover:opacity-75"
+          href="https://lfai.foundation/projects/"
+        >
+          <img src="{{
+          "/assets/images/lfaidata-project-badge-graduate-white.svg" | prepend:
+          site.url }}" width="130px" id="lfaidata-main"> <img src="{{
+          "/assets/images/lfaidata-project-badge-graduate-black.svg" | prepend:
+          site.url }}" width="130px" id="lfaidata-light-bg">
+        </a>
+      </li>
+    </ul>
+    <button
+      class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline md:right-8 md:absolute"
+      @click="open = !open"
+    >
+      <svg fill="#ffffff" viewBox="0 0 20 20" class="w-6 h-6" id="nav-svg">
+        <path
+          x-show="!open"
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        ></path>
+        <path
+          x-show="open"
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
+  <nav
+    :class="{'flex': open, 'hidden': !open}"
+    class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row"
+  >
+    <div
+      @mouseover.away="open = false"
+      class="relative inline-block"
+      x-data="{ open: false, isTouch: false }"
+    >
+      <!-- mouseenter event does an XOR operation; if isTouch is true, then open = negation of open; if isTouch is false, then open = same as open -->
+      <button
+        @touchstart="open = !open, isTouch = true"
+        @mouseenter="open = (!open && !isTouch) || (open && isTouch)"
+        class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent mb-2 rounded-lg lg:w-auto lg:inline lg:mt-0 3 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      >
+        <span class="text-base">Docs</span>
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          :class="{'rotate-180': open, 'rotate-0': !open}"
+          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        x-cloak
+        x-show="open"
+        x-transition:enter="transition ease-out duration-100"
+        x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95"
+        class="static lg:absolute right-0 w-full origin-top-right rounded-md shadow-lg lg:w-48"
+      >
+        <div class="px-2 py-2 bg-white rounded-md shadow">
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.getstarted }}"
+            >Getting Started</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.userguide }}"
+            >User Guide</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.tutorials }}"
+            >Tutorials</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.apidocs }}"
+            >API Docs</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.deployment_guide }}"
+            >Deployment Guide</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      @mouseover.away="open = false"
+      class="relative"
+      x-data="{ open: false, isTouch: false }"
+    >
+      <button
+        @touchstart="open = !open, isTouch = true"
+        @mouseenter="open = (!open && !isTouch) || (open && isTouch)"
+        class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      >
+        <span class="text-base">Learn</span>
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          :class="{'rotate-180': open, 'rotate-0': !open}"
+          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        x-cloak
+        x-show="open"
+        x-transition:enter="transition ease-out duration-100"
+        x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95"
+        class="static lg:absolute right-0 w-full origin-top-right rounded-md shadow-lg lg:w-48"
+      >
+        <div class="px-2 py-2 bg-white rounded-md shadow">
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.blog }}"
+            >Blog</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.newsletter }}"
+            >Newsletter</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.concepts }}"
+            >Concepts</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.discuss }}"
+            >Knowledge Base</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      @mouseover.away="open = false"
+      class="relative"
+      x-data="{ open: false, isTouch: false }"
+    >
+      <button
+        @touchstart="open = !open, isTouch = true"
+        @mouseenter="open = (!open && !isTouch) || (open && isTouch)"
+        class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      >
+        <span class="text-base">Ecosystem</span>
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          :class="{'rotate-180': open, 'rotate-0': !open}"
+          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        x-cloak
+        x-show="open"
+        x-transition:enter="transition ease-out duration-100"
+        x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95"
+        class="static lg:absolute right-0 w-full origin-top-right rounded-md shadow-lg lg:w-48"
+      >
+        <div class="px-2 py-2 bg-white rounded-md shadow">
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.unionml }}"
+            >UnionML</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="/integrations"
+            >Flyte Integrations</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.latchsdk }}"
+            >Latch SDK</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.js_sdk }}"
+            >Pterodactyl</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.vscode_extension }}"
+            >Flyte-Wingman</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      @mouseover.away="open = false"
+      class="relative"
+      x-data="{ open: false, isTouch: false }"
+    >
+      <button
+        @touchstart="open = !open, isTouch = true"
+        @mouseenter="open = (!open && !isTouch) || (open && isTouch)"
+        class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      >
+        <span class="text-base">Community</span>
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          :class="{'rotate-180': open, 'rotate-0': !open}"
+          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        x-cloak
+        x-show="open"
+        x-transition:enter="transition ease-out duration-100"
+        x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95"
+        class="static lg:absolute right-0 w-full origin-top-right rounded-md shadow-lg lg:w-56 z-50"
+      >
+        <div class="px-2 py-2 bg-white rounded-md shadow">
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.slack }}"
+            >Slack</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.twitter }}"
+            >Twitter</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.discussions }}"
+            >GitHub Discussions</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.youtube }}"
+            >YouTube</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.roadmap }}"
+            >Roadmap</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.deployments }}"
+            >Current Deployments</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="/swag"
+            >The Swag Program</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="/conference-talks"
+            >Conference Talks & Podcasts</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.community_syncup }}"
+            >Open Source Community Sync</a
+          >
+          <div
+            @mouseover.away="subOpen = false"
+            class="relative"
+            x-data="{ subOpen: false, subIsTouch: false }"
+          >
+            <button
+              @touchstart="subOpen = !subOpen, subIsTouch = true"
+              @mouseenter="subOpen = (!subOpen && !subIsTouch) || (subOpen && subIsTouch)"
+              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              <span>Weekly Office Hours</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="subOpen"
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="static lg:relative right-0 w-full origin-top-right rounded-md shadow-lg lg:w-48"
+            >
+              <div class="px-2 py-2 bg-white rounded-md shadow">
+                <a
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="{{ site.office_hour_morning }}"
+                  >7:00-7:30 AM PT</a
+                >
+                <a
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="{{ site.office_hour_midday }}"
+                  >1:30-2:00 PM PT</a
+                >
+                <a
+                  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="{{ site.office_hour_evening }}"
+                  >9:00-9:30 PM PT</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inline-block py-4 md:py-1 px-3 github-stars-div">
+      <a
+        style="
+          background-color: #b8c6db;
+          background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+          padding: 5px 10px;
+          line-height: 16px;
+          height: 28px;
+          border: 1px solid #ccd1d5;
+          border-radius: 0.25em 0 0 0.25em;
+          border-right: 0;
+        "
+        class="inline-block text-sm font-semibold text-gray-900"
+        href="{{ site.github }}"
+      >
+        <svg
+          aria-hidden="true"
+          role="img"
+          class="octicon inline-block"
+          viewBox="0 0 16 16"
+          width="16"
+          height="16"
+          fill="currentColor"
+          style="margin-bottom: 2px"
+        >
+          <title>GitHub</title>
+          <path
+            fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+          ></path>
+        </svg>
+        <span class="text-xs my-auto">Star</span> </a
+      ><a
+        style="
+          border: 1px solid #ccd1d5;
+          border-radius: 0 0.25em 0.25em 0;
+          background-color: #fff;
+          height: 28px;
+          padding: 5px 10px !important;
+          line-height: 16px;
+          border-left: 0;
+        "
+        class="px-2 py-2 text-sm font-semibold text-gray-900 inline-flex relative"
+        href="{{ site.github }}/stargazers"
+      >
+        <span id="github-stars" class="opacity-0" style="min-width: 35px"
+          >_</span
+        >
+      </a>
+    </div>
+  </nav>
+</div>
+<!-- </nav> -->

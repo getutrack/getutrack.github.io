@@ -1,0 +1,7 @@
+.DS_Store
+.jekyll-metadata
+node_modules_site
+node_modules
+dist
+_site/*
+.vscode

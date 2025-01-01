@@ -1,0 +1,128 @@
+{
+  "pilot": [
+    {
+      "name": "Sören Brunk",
+      "github_url": "https://github.com/sbrunk",
+      "avatar": "https://avatars.githubusercontent.com/u/3939659?v=4"
+    },
+    {
+      "name": "Max Smolin",
+      "github_url": "https://github.com/maximsmol",
+      "avatar": "https://avatars.githubusercontent.com/u/1472826?v=4"
+    },
+    {
+      "name": "Matthew Griffin",
+      "github_url": "https://github.com/NotMatthewGriffin",
+      "avatar": "https://avatars.githubusercontent.com/u/19853373?v=4"
+    },
+    {
+      "name": "Ryan Nazareth",
+      "github_url": "https://github.com/ryankarlos",
+      "avatar": "https://avatars.githubusercontent.com/u/16509490?v=4"
+    }
+  ],
+  "host": [
+    {
+      "name": "Kenny Workman",
+      "github_url": "https://github.com/kennyworkman",
+      "avatar": "https://avatars.githubusercontent.com/u/31255434?v=4"
+    },
+    {
+      "name": "Constantine Slisenka",
+      "github_url": "https://github.com/cslisenka",
+      "avatar": "https://avatars.githubusercontent.com/u/1867416?v=4"
+    },
+    {
+      "name": "Guillaume Perchais",
+      "github_url": "https://github.com/Gui11aum3",
+      "avatar": "https://avatars.githubusercontent.com/u/21953442?v=4"
+    },
+    {
+      "name": "Charalampos Kiosidis",
+      "github_url": "https://github.com/ckiosidis",
+      "avatar": "https://avatars.githubusercontent.com/u/6562898?v=4"
+    },
+    {
+      "name": "Sugato Ray",
+      "github_url": "https://github.com/sugatoray",
+      "avatar": "https://avatars.githubusercontent.com/u/10201242?v=4"
+    },
+    {
+      "name": "Robin Kahlow",
+      "github_url": "https://github.com/RobinKa",
+      "avatar": "https://avatars.githubusercontent.com/u/2614101?v=4"
+    },
+    {
+      "name": "Evan Sadler",
+      "github_url": "https://github.com/esadler-hbo",
+      "avatar": "https://avatars.githubusercontent.com/u/97543480?v=4"
+    },
+    {
+      "name": "Calvin Leather",
+      "github_url": "https://github.com/CalvinLeather",
+      "avatar": "https://avatars.githubusercontent.com/u/6288302?v=4"
+    },
+    {
+      "name": "Arief Rahmansyah",
+      "github_url": "https://github.com/ariefrahmansyah",
+      "avatar": "https://avatars.githubusercontent.com/u/8122852?v=4"
+    },
+    {
+      "name": "Ailin Yu",
+      "github_url": "https://github.com/niliayu",
+      "avatar": "https://avatars.githubusercontent.com/u/11970258?v=4"
+    },
+    {
+      "name": "Nick LoFaso",
+      "github_url": "https://github.com/nicklofaso",
+      "avatar": "https://avatars.githubusercontent.com/u/25391173?v=4"
+    },
+    {
+      "name": "Justin Tyberg",
+      "github_url": "https://github.com/jtyberg",
+      "avatar": "https://avatars.githubusercontent.com/u/359081?v=4"
+    },
+    {
+      "name": "Daniel Shuy",
+      "github_url": "https://github.com/daniel-shuy",
+      "avatar": "https://avatars.githubusercontent.com/u/17351764?v=4"
+    },
+    {
+      "name": "Jeremy Smith",
+      "github_url": "https://github.com/jerempy",
+      "avatar": "https://avatars.githubusercontent.com/u/95110820?v=4"
+    }
+  ],
+  "passenger": [
+    {
+      "name": "Eugene Jahn",
+      "github_url": "https://github.com/eugenejahn",
+      "avatar": "https://avatars.githubusercontent.com/u/25038146?v=4"
+    },
+    {
+      "name": "Nick Müller",
+      "github_url": "https://github.com/MorpheusXAUT",
+      "avatar": "https://avatars.githubusercontent.com/u/452166?v=4"
+    },
+    {
+      "name": "Robert Everson",
+      "github_url": "https://github.com/reverson",
+      "avatar": "https://avatars.githubusercontent.com/u/391264?v=4"
+    },
+    {
+      "name": "David Przybilla",
+      "github_url": "https://github.com/dav009",
+      "avatar": "https://avatars.githubusercontent.com/u/1659415?v=4"
+    },
+    {
+      "name": "Sujith Samuel",
+      "github_url": "https://github.com/samuel-sujith",
+      "avatar": "https://avatars.githubusercontent.com/u/33272587?v=4"
+    },
+    {
+      "name": "Zev Isert",
+      "github_url": "https://github.com/zevisert",
+      "avatar": "https://avatars.githubusercontent.com/u/11222441?v=4"
+    }
+  ]
+}
